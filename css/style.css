@@ -1,0 +1,105 @@
+*{padding: 0; margin: 0; border: 0;}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/* * ------------------------------------------------- */
+.header__img {
+    
+    background:url("../img/Background.jpg") no-repeat 50%/cover;
+    width: 100%;
+    position: relative;
+
+}
+.header__block {
+    display: flex;
+}
+
+.container__circle {
+    background-color: #FFA501;
+    margin-top: 150px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+    font-size: 13px;   
+}
+.container__p {
+    margin-left: 10px;
+    margin-top: -22px;
+}
+.header_block_left {
+    float: left;
+    width: 20%;
+}
+.header_block_center {
+    width: 60%;
+}
+.header_block_right {
+    clear: left;
+    width: 20%;
+}
+.header_block_center__p {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 37px;
+}
+.header_block_center__btns {
+    margin-top: 40px;
+}
+.btn  {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-right: 25px;
+}
+.btn_active {
+    width: 95px;
+    height: 35px;
+    background-color: #FFA501;
+}
+
+@media screen and (max-width: 1920px) {
+    .header__img {
+        height: 800px;
+        
+    }
+}
+@media screen and (max-width: 1366px) {
+    .header__img {
+        height: 653px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header__img {
+        height: 653px;
+        
+    }
+}
