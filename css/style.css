@@ -31,7 +31,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     
     background:url("../img/Background.jpg") no-repeat 50%/cover;
     width: 100%;
-    position: relative;
+    height: 666px;
+    
 
 }
 .header__block {
@@ -48,7 +49,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .p {
     font-family: 'Poppins', sans-serif;
     font-weight: 700; 
-    font-size: 13px;   
+    font-size: 16px;   
 }
 .container__p {
     margin-left: 10px;
@@ -56,50 +57,97 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .header_block_left {
     float: left;
-    width: 20%;
+    width: 10%;
 }
 .header_block_center {
-    width: 60%;
+    width: 80%;
 }
 .header_block_right {
     clear: left;
-    width: 20%;
+    width: 10%;
 }
 .header_block_center__p {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 37px;
+    font-size: 47px;
 }
 .header_block_center__btns {
     margin-top: 40px;
+    width: 100%;
 }
 .btn  {
+    display: flexbox;
     border: none;
     outline: none;
     background-color: transparent;
-    margin-right: 25px;
+    height: 40px;
+    width: 14%;
+    
+
 }
+
 .btn_active {
-    width: 95px;
-    height: 35px;
     background-color: #FFA501;
 }
 
-@media screen and (max-width: 1920px) {
-    .header__img {
-        height: 800px;
-        
+@media screen and (max-width: 830px) {
+    .p {
+        font-size:  13px;
+       
     }
+    
+    .header_block_center__p {
+        font-size: 43px;
+    }
+    
+    .btn {
+        min-width: 100px;
+        height: 30px;
+    }
+    
 }
-@media screen and (max-width: 1366px) {
-    .header__img {
-        height: 653px;
+@media screen and (max-width: 630px) {
+    .p {
+        font-size:  10px;
+       
+    }
+    
+    .header_block_center__p {
+        font-size: 30px;
+    }
+    
+    .header_block_center__btns {
+        margin-top: 20px;
+    }
+    .btn {
+        min-width: 120px;
+        
+        height: 35px;
         width: 100%;
     }
+    .header_block_center__btns {
+        width: 30%;
+    }
 }
-@media screen and (max-width: 1024px) {
-    .header__img {
-        height: 653px;
+@media screen and (max-width: 430px) {
+    .p {
+        font-size:  10px;
+       
+    } 
+    .header_block_center__p {
+        font-size: 30px;
+    }
+    
+    .btn {
+        min-width: 90px;
         
+        height: 25px;
+        width: 100%;
+    }
+    .header_block_center__btns {
+        width: 30%;
+    }
+    .header__img {
+        background:url("../img/Background.jpg") no-repeat 60%/cover;
     }
 }
