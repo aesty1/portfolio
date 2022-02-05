@@ -32,16 +32,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background:url("../img/Background.jpg") no-repeat 50%/cover;
     width: 100%;
     height: 666px;
-    
+    object-fit:cover;
 
 }
 .header__block {
     display: flex;
 }
-
+.header_circle {
+    margin-top: 150px;
+}
 .container__circle {
     background-color: #FFA501;
-    margin-top: 150px;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -49,27 +50,40 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .p {
     font-family: 'Poppins', sans-serif;
     font-weight: 700; 
-    font-size: 16px;   
+    font-size: 16px;
+    line-height: 1.3;   
+}
+.little_p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    font-size: 13px;  
+    line-height: 1.3;
 }
 .container__p {
     margin-left: 10px;
     margin-top: -22px;
 }
-.header_block_left {
-    float: left;
-    width: 10%;
-}
-.header_block_center {
+
+
+.header_block_content {
+    margin: 0 auto;
     width: 80%;
 }
-.header_block_right {
-    clear: left;
-    width: 10%;
-}
+
 .header_block_center__p {
     margin-top: 20px;
+}
+.h1 {
     font-weight: 700;
-    font-size: 47px;
+    font-size: 48px;
+}
+.h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+.h3 {
+    font-weight: 700;
+    font-size: 14px;
 }
 .header_block_center__btns {
     margin-top: 40px;
@@ -89,7 +103,93 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .btn_active {
     background-color: #FFA501;
 }
+.content {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.about_block  {
+    display: flex;
+    margin-top: 104px;
+    flex-wrap:wrap;
+}
+.about__image {
+    min-width: 250px;
+    max-width: 30%;
+    height: 400px;
+    margin-right: 70px;
+}
+.about_block__text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:1020px) {
+    .about_block__text {
+        width: 50%;
+        
+    }
+}
+.about_block__text>* {
+    margin-bottom: 10px;
+}
+.about_block__p {
+    white-space: nowrap;
+    width: 17%;
+    border-bottom: 3px solid #FFA501 ;
+}
 
+@media screen and (max-width: 900px) { 
+    .about_block__text {
+        width: 40%;
+    }
+    .h2 {
+        font-size:  26px;
+    }
+}
+.about_block_li {
+    display:inline-flex;
+    min-width: 275px;
+    width: 43%;
+    
+}
+.about_block__ul :not(:first-child) >div {
+    margin-top:  10px;
+}   
+.about_block_li__img {
+    min-height: 30px;
+    min-width: 30px;
+    margin-right: 20px;
+}
+.about_block_li__name {
+    padding-bottom: 10px;
+}
+.about_block_li__description {
+    line-height: 1.3;
+    font-size: 11px;
+}
+
+.about_block__little_p {
+    width: 105%;
+}
+
+.about_block__ul {
+    display:flexbox;
+    width: 115%;
+
+
+}
+.about_block_li__text {
+    min-width: 220px;
+    max-width: 220px;
+    
+}
+
+
+
+
+
+/* --------------------MEDIA------------------ */
 @media screen and (max-width: 830px) {
     .p {
         font-size:  13px;
@@ -104,7 +204,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         min-width: 100px;
         height: 30px;
     }
-    
+    .h2 {
+        font-size:  23px;
+    }
 }
 @media screen and (max-width: 630px) {
     .p {
@@ -137,17 +239,41 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     .header_block_center__p {
         font-size: 30px;
     }
+    .header__img {
+        background:url("../img/Background.jpg") no-repeat 60%/cover;
+    }
     
-    .btn {
-        min-width: 90px;
-        
-        height: 25px;
+    .btn {   
         width: 100%;
     }
     .header_block_center__btns {
         width: 30%;
     }
-    .header__img {
-        background:url("../img/Background.jpg") no-repeat 60%/cover;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .about_block {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .about_block >* {
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .about_block__text >* {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+    .h2 {
+        font-size: 26px;
+    }
+    .p {
+        font-size: 16px;
     }
 }
